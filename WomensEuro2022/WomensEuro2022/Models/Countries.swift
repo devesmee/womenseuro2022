@@ -22,5 +22,4 @@ enum Countries: String, Codable {
     case spain = "Spain"
     case sweden = "Sweden"
     case switzerland = "Switzerland"
-    case unknown = "??"
 }

@@ -49,7 +49,9 @@ struct MatchListRow: View {
 }
 
 struct MatchListRow_Previews: PreviewProvider {
+    static let exampleMatch = Match(date: "11 July 2022", homeTeam: Countries.austria, awayTeam: Countries.northernIreland, score: "2 - 0", tournamentStage: .groupStage)
+    
     static var previews: some View {
-        MatchListRow(match: ViewModel.exampleMatch)
+        MatchListRow(match: exampleMatch)
     }
 }

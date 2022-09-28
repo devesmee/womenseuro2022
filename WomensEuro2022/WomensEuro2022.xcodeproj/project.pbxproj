@@ -14,7 +14,6 @@
 		7BA43B23287C6D2E00A37048 /* Stadium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA43B22287C6D2E00A37048 /* Stadium.swift */; };
 		7BA43B25287C6D6900A37048 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA43B24287C6D6900A37048 /* Match.swift */; };
 		7BA43B27287C6D9200A37048 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA43B26287C6D9200A37048 /* Countries.swift */; };
-		7BA43B29287C6DF300A37048 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA43B28287C6DF300A37048 /* ViewModel.swift */; };
 		7BD3FDC0287EB059000C4C2F /* StadiumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3FDBF287EB059000C4C2F /* StadiumDetailView.swift */; };
 		7BD3FDC9287EE883000C4C2F /* TournamentStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3FDC8287EE883000C4C2F /* TournamentStage.swift */; };
 		7BD3FDCB287EF213000C4C2F /* MatchListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3FDCA287EF213000C4C2F /* MatchListRow.swift */; };
@@ -31,7 +30,6 @@
 		7BA43B22287C6D2E00A37048 /* Stadium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stadium.swift; sourceTree = "<group>"; };
 		7BA43B24287C6D6900A37048 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		7BA43B26287C6D9200A37048 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
-		7BA43B28287C6DF300A37048 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		7BD3FDBF287EB059000C4C2F /* StadiumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumDetailView.swift; sourceTree = "<group>"; };
 		7BD3FDC5287EC26B000C4C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7BD3FDC8287EE883000C4C2F /* TournamentStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentStage.swift; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 				7BD3FDC5287EC26B000C4C2F /* Info.plist */,
 				7BA43B14287C6AA100A37048 /* WomensEuro2022App.swift */,
 				7BD3FDBC287EAF77000C4C2F /* Models */,
-				7BD3FDBE287EB03B000C4C2F /* ViewModels */,
 				7BD3FDBD287EB035000C4C2F /* Views */,
 				7BA43B18287C6AA300A37048 /* Assets.xcassets */,
 				7BE2F58C288023EF00E61553 /* data.json */,
@@ -110,14 +107,6 @@
 				7BD3FDBF287EB059000C4C2F /* StadiumDetailView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		7BD3FDBE287EB03B000C4C2F /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				7BA43B28287C6DF300A37048 /* ViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +188,6 @@
 				7BA43B15287C6AA100A37048 /* WomensEuro2022App.swift in Sources */,
 				7BA43B27287C6D9200A37048 /* Countries.swift in Sources */,
 				7BD3FDCB287EF213000C4C2F /* MatchListRow.swift in Sources */,
-				7BA43B29287C6DF300A37048 /* ViewModel.swift in Sources */,
 				7BA43B25287C6D6900A37048 /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
