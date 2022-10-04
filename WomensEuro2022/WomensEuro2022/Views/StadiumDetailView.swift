@@ -13,9 +13,9 @@ struct StadiumDetailView: View {
             StadiumInfo(stadium: stadium)
             
             List() {
-                if stadium.matches.first(where: { $0.tournamentStage == .groupStage } ) != nil {
+                if !matches.groupStage.isEmpty {
                     Section("Group stage") {
-                        ForEach(stadium.matches.filter {m in m.tournamentStage == .groupStage} , id: \.id) {
+                        ForEach(matches.groupStage, id: \.id) {
                             match in
                             MatchListRow(match: match)
                         }
@@ -23,30 +23,33 @@ struct StadiumDetailView: View {
                     }
                 }
                 
-                if stadium.matches.first(where: { $0.tournamentStage == .quarterFinal } ) != nil {
+                if !matches.quarterFinal.isEmpty {
                     Section("Quarter-finals") {
-                        ForEach(stadium.matches.filter {m in m.tournamentStage == .quarterFinal} , id: \.id) {
+                        ForEach(matches.quarterFinal, id: \.id) {
                             match in
                             MatchListRow(match: match)
                         }
+                        .lineSpacing(10)
                     }
                 }
                 
-                if stadium.matches.first(where: { $0.tournamentStage == .semiFinal } ) != nil {
+                if !matches.semiFinal.isEmpty {
                     Section("Semi-finals") {
-                        ForEach(stadium.matches.filter {m in m.tournamentStage == .semiFinal }, id: \.id) {
+                        ForEach(matches.semiFinal, id: \.id) {
                             match in
                             MatchListRow(match: match)
                         }
+                        .lineSpacing(10)
                     }
                 }
                 
-                if stadium.matches.first(where: { $0.tournamentStage == .final } ) != nil {
+                if !matches.final.isEmpty {
                     Section("Final") {
-                        ForEach(stadium.matches.filter {m in m.tournamentStage == .final} , id: \.id) {
+                        ForEach(matches.final, id: \.id) {
                             match in
                             MatchListRow(match: match)
                         }
+                        .lineSpacing(10)
                     }
                 }
             }
@@ -54,6 +57,10 @@ struct StadiumDetailView: View {
         }
         .background(Color("Background"))
         .navigationBarTitle("", displayMode: .inline)
+    }
+    
+    private var matches: [Match] {
+        return stadium.matches
     }
 }
 

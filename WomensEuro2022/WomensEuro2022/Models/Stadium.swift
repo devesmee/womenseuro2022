@@ -6,7 +6,7 @@
 import Foundation
 import CoreLocation
 
-struct Stadium: Identifiable, Codable {
+struct Stadium: Identifiable, Decodable {
     let id = UUID()
     let name: String
     let city: String

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B598D6528EC5272000690F2 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B598D6428EC5272000690F2 /* Array.swift */; };
 		7BA43B15287C6AA100A37048 /* WomensEuro2022App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA43B14287C6AA100A37048 /* WomensEuro2022App.swift */; };
 		7BA43B17287C6AA100A37048 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA43B16287C6AA100A37048 /* MapView.swift */; };
 		7BA43B19287C6AA300A37048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA43B18287C6AA300A37048 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B598D6428EC5272000690F2 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		7BA43B11287C6AA100A37048 /* WomensEuro2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WomensEuro2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BA43B14287C6AA100A37048 /* WomensEuro2022App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomensEuro2022App.swift; sourceTree = "<group>"; };
 		7BA43B16287C6AA100A37048 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B598D6328EC523F000690F2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7B598D6428EC5272000690F2 /* Array.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		7BA43B08287C6AA100A37048 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 		7BA43B13287C6AA100A37048 /* WomensEuro2022 */ = {
 			isa = PBXGroup;
 			children = (
+				7B598D6328EC523F000690F2 /* Extensions */,
 				7BD3FDC5287EC26B000C4C2F /* Info.plist */,
 				7BA43B14287C6AA100A37048 /* WomensEuro2022App.swift */,
 				7BD3FDBC287EAF77000C4C2F /* Models */,
@@ -181,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BA43B17287C6AA100A37048 /* MapView.swift in Sources */,
+				7B598D6528EC5272000690F2 /* Array.swift in Sources */,
 				7BD3FDCD287EF2DD000C4C2F /* StadiumInfo.swift in Sources */,
 				7BD3FDC9287EE883000C4C2F /* TournamentStage.swift in Sources */,
 				7BA43B23287C6D2E00A37048 /* Stadium.swift in Sources */,

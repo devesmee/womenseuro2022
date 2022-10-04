@@ -5,7 +5,7 @@
 
 import Foundation
 
-enum Countries: String, Codable {
+enum Countries: String, Decodable {
     case austria = "Austria"
     case belgium = "Belgium"
     case denmark = "Denmark"
